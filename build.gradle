@@ -20,10 +20,12 @@ dependencies {
     testImplementation platform('org.junit:junit-bom:6.0.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    testImplementation 'net.sf.expectit:expectit-core:0.9.0'
 }
 
 test {
     useJUnitPlatform()
+    dependsOn jar  // 테스트 전 JAR 자동 빌드
 }
 
 // 🔥 UTF-8 설정
