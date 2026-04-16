@@ -21,7 +21,7 @@ powershell 에서 실행함
 
 ### E2E 테스트
 - ExpectIt 으로 테스트
- <img width="751" height="611" alt="image" src="https://github.com/user-attachments/assets/f8ea3699-c432-490c-9ef4-935646aae998" />
+ <img width="251" alt="image" src="https://github.com/user-attachments/assets/f8ea3699-c432-490c-9ef4-935646aae998" />
 
 ```java
     @Test
