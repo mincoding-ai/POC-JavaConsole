@@ -3,8 +3,7 @@ powershell 에서 실행함
 - julu java sdk 17 설치 필요
 
 ```
-.\gradlew build
-java -jar .\build\libs\untitled-1.0-SNAPSHOT.jar
+.\gradlew build; java -jar .\build\libs\untitled-1.0-SNAPSHOT.jar
 ```
 
 ### 가능한 범주
