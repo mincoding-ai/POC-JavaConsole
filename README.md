@@ -18,3 +18,20 @@ powershell 에서 실행함
 
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/363a1849-6207-47f9-8792-357fde2b5add" />
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/a0c41b43-621a-4785-9aec-ad58ccf13855" />
+
+### E2E 테스트
+- ExpectIt 으로 테스트
+ <img width="751" height="611" alt="image" src="https://github.com/user-attachments/assets/f8ea3699-c432-490c-9ef4-935646aae998" />
+
+```java
+    @Test
+    @DisplayName("잘못된 입력 시 경고 후 재입력 요청")
+    void invalidInput() throws IOException {
+        expect.expect(contains("선택 >"));
+        expect.sendLine("9");
+        expect.expect(contains("1~4 사이의 숫자를 입력하세요."));
+        expect.expect(contains("선택 >"));
+        expect.sendLine("1");
+        expect.expect(contains("1번을 선택하셨습니다."));
+    }
+```
