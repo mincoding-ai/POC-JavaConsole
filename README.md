@@ -1,3 +1,10 @@
+powershell 에서 실행함
+- julu java sdk 17 설치 필요
+
+
+
+
+
 .\gradlew build
 
 이후
